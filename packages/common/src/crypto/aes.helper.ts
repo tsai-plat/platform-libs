@@ -80,10 +80,10 @@ export class AESCipher {
   static parseAppKey(appKey: string) {
     const keybuf = createHash('sha512').update(appKey).digest();
 
-    globalThis.console.log(
-      keybuf.toString('hex'),
-      keybuf.subarray(0, 32).toString('hex'),
-    );
+    // globalThis.console.log(
+    //   keybuf.toString('hex'),
+    //   keybuf.subarray(0, 32).toString('hex'),
+    // );
     return {
       key: keybuf.subarray(0, 32),
       iv: keybuf.subarray(0, 16),

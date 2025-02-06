@@ -13,7 +13,7 @@ describe('EC-client', () => {
     test('list current env curves list', () => {
       const list = EcClient.listCurves();
 
-      globalThis.console.log(JSON.stringify(list, null, 2));
+      // globalThis.console.log(JSON.stringify(list, null, 2));
       expect(list?.length).toBeGreaterThan(3);
     });
   });

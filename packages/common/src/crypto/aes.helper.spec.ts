@@ -23,12 +23,8 @@ describe('AES-Utils', () => {
     test('encrypted aes base64', () => {
       const aes = new AESCipher(appkey);
 
-      // globalThis.console.log(aes.opts);
-
       const enData = aes.encode(text);
       const base64 = AESCipher.hexToBase64(enData);
-
-      // globalThis.console.log(aes.opts, base64);
 
       const decrypedText = aes.decode(AESCipher.fromBase64ToHex(base64));
 
