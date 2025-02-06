@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "nest build",
-    "build:libs":"pnpm --filter=@tsai-platform/* run build",
+    "build:libs": "pnpm --filter=@tsai-platform/* run build",
     "format": "prettier --write \"apps/**/*.ts\" \"packages/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
@@ -20,9 +20,9 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./apps/audio-ws/test/jest-e2e.json",
     "change": "changeset",
-    "version:pkg":"changeset version",
-    "vp":"pnpm version:pkg",
-    "release":"pnpm build:libs && pnpm changeset publish --registry=https://registry.npmjs.com/"
+    "version:pkg": "changeset version",
+    "vp": "pnpm version:pkg",
+    "release": "pnpm build:libs && pnpm changeset publish --registry=https://registry.npmjs.com/"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -34,6 +34,8 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.12",
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/config-conventional": "19.7.1",
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/swagger": "11.0.3",
@@ -51,7 +53,10 @@
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "globals": "15.14.0",
+    "husky": "9.1.7",
     "jest": "^29.5.0",
+    "lint-staged": "15.4.3",
     "prettier": "^3.0.0",
     "rimraf": "^6.0.1",
     "source-map-support": "^0.5.21",

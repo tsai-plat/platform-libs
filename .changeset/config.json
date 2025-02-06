@@ -13,9 +13,12 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "audio-ws"
+    "@tsai-platform/core",
+    "@tsai-platform/system"
   ],
   "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "onlyUpdatePeerDependentsWhenOutOfRange": true
+    "onlyUpdatePeerDependentsWhenOutOfRange": true,
+    "ignore": ["audio-ws"],
+    "updateInternalDependencies": "patch"
   }
 }

@@ -1,6 +1,6 @@
 {
     "name": "@tsai-platform/common",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Tsailab library common",
     "author": "tsailab",
     "license": "LICENSE",
@@ -16,6 +16,7 @@
         "README.md"
     ],
     "scripts": {
+        "postinstall": "npx only-allow pnpm",
         "build": "pnpm clean && pnpm build:pkg",
         "build:pkg": "tsc --build --verbose --force tsconfig.pkg.json",
         "clean": "rm -rf ./dist/*",
