@@ -17,5 +17,12 @@ $ pnpm build:libs
 
 3. 执行 changeset version，修改发布包的版本
 ```
-$ pnpm version:pkg
+$ pnpm vp
+```
+
+4. 发布
+
+```
+cd packages/common
+npm publish
 ```

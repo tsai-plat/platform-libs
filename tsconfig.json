@@ -19,19 +19,15 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@tsai-platform/common": [
-        "packages/common/src",
         "packages/common/dist"
       ],
       "@tsai-platform/common/*": [
-        "packages/common/src/*",
         "packages/common/dist/*"
       ],
       "@tsai-platform/core": [
-        "packages/core/src",
         "packages/core/dist"
       ],
       "@tsai-platform/core/*": [
-        "packages/core/src/*",
         "packages/core/dist/*"
       ],
       "@tsai-platform/system": [

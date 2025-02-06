@@ -1,6 +1,6 @@
 {
     "name": "@tsai-platform/common",
-    "version": "0.2.0",
+    "version": "1.0.0",
     "description": "Tsailab library common",
     "author": "tsailab",
     "license": "LICENSE",
@@ -36,6 +36,7 @@
         "@jest/globals": "29.7.0",
         "@nestjs/common": "^10.0.0",
         "@nestjs/testing": "^10.0.0",
+        "@nestjs/typeorm": "10.0.2",
         "@types/jest": "^29.5.2",
         "bcrypt": "5.1.1",
         "class-validator": "0.14.1",
@@ -52,6 +53,7 @@
         "@ingestkorea/util-jsonwebtoken": "1.1.1",
         "@nestjs/common": "^9.4.3 || ^10.0.0",
         "@nestjs/testing": "^9.4.3 || ^10.0.0",
+        "@nestjs/typeorm": "10.0.2",
         "bcrypt": "5.1.1",
         "class-validator": "0.14.1",
         "date-fns": "4.1.0",
