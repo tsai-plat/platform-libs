@@ -1,0 +1,6 @@
+[submodule "apps/log-recorder"]
+	path = apps/log-recorder
+	url = git@github.com:tsai-plat/log-recorder.git
+[submodule "apps/audio-ws"]
+	path = apps/audio-ws
+	url = git@github.com:tsai-plat/audio-ws.git

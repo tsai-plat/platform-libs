@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@tsailab/schematics",
+  "sourceRoot": "apps/audio-ws/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/audio-ws/tsconfig.app.json"
+  },
+  "projects": {
+    "audio-ws": {
+      "type": "application",
+      "root": "apps/audio-ws",
+      "entryFile": "main",
+      "sourceRoot": "apps/audio-ws/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/audio-ws/tsconfig.app.json"
+      }
+    },
+    "system": {
+      "type": "library",
+      "root": "packages/system",
+      "entryFile": "index",
+      "sourceRoot": "packages/system/src",
+      "compilerOptions": {
+        "tsConfigPath": "packages/system/tsconfig.pkg.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "packages/common",
+      "entryFile": "index",
+      "sourceRoot": "packages/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "packages/common/tsconfig.pkg.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "packages/core",
+      "entryFile": "index",
+      "sourceRoot": "packages/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "packages/core/tsconfig.pkg.json"
+      }
+    }
+  },
+  "monorepo": true,
+  "root": "apps/audio-ws"
+}

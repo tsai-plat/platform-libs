@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Audio-WS DEBUG",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+              "run",
+              "start:dev",
+              "--",
+              "--inspect-brk"
+            ],
+            "autoAttachChildProcesses": true,
+            "console": "integratedTerminal",
+            "sourceMaps": true,
+            "restart": true,
+            "stopOnEntry": false,              
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "cwd": "${workspaceFolder}/apps/audio-ws",
+            "outFiles": [
+                "${workspaceFolder}/apps/audio-ws/dist/**/*.js"
+            ]
+        }
+    ]
+}

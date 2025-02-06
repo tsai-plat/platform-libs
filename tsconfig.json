@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@tsai-platform/common": [
+        "packages/common/src",
+        "packages/common/dist"
+      ],
+      "@tsai-platform/common/*": [
+        "packages/common/src/*",
+        "packages/common/dist/*"
+      ],
+      "@tsai-platform/core": [
+        "packages/core/src",
+        "packages/core/dist"
+      ],
+      "@tsai-platform/core/*": [
+        "packages/core/src/*",
+        "packages/core/dist/*"
+      ],
+      "@tsai-platform/system": [
+        "packages/system/dist"
+      ],
+      "@tsai-platform/system/*": [
+        "packages/system/dist/*"
+      ]
+    }
+  }
+}
