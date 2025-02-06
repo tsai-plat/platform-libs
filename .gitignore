@@ -65,3 +65,11 @@ libs/**/dist
 # Tsai App environment config
 **/.conf/*
 !**/.conf/**/*.example
+
+#wiki
+wiki/**/*.md
+
+
+# tests
+__tests__/
+packages/**/coverage
