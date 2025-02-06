@@ -32,4 +32,10 @@ git submodule add git-url ./apps/some-app
 ## Library 
 
 
-##
+# 集成changeset
+
+```bash
+pnpm add @changesets/cli -Dw
+pnpm add @changesets/changelog-github -Dw
+pnpm changeset init
+```
